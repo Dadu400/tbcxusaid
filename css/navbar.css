@@ -1,0 +1,35 @@
+.navbar {
+    background-color: #1A1E1F;
+}
+
+.navbar-content {
+    width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 22px 0px;
+}
+
+.navbar-logo img {
+    width: 182px;
+    height: 36px;
+}
+
+.navbar-menu {
+    font-size: 14px;
+    display: flex;
+    gap: 40px;
+}
+
+.navbar-link {
+    transition: color .4s ease 0s;
+}
+
+.navbar-link:hover {
+    color: rgb(0, 163, 224)
+}
+
+.navbar .active {
+    color: rgb(0, 163, 224);
+}

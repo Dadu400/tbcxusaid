@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "tbc-font";
+  src: url("./fonts/tbc-font.woff2") format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #161616;
+  color: white;
+  font-family: "tbc-font";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
