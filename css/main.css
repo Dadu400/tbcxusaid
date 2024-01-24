@@ -3,6 +3,16 @@
   src: url("./fonts/tbc-font.woff2") format('woff');
 }
 
+@font-face {
+  font-family: "tbc-font-bold";
+  src: url("./fonts/tbc-font-bold.woff2") format('woff');
+}
+
+.container {
+  width: 75vw;
+  margin: 0 auto;
+}
+
 * {
   margin: 0;
   padding: 0;

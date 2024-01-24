@@ -1,0 +1,22 @@
+.intro-section {
+    background-image:url(../assets/people_meeting_background.jpg);
+}
+
+.intro-section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 352px;
+    gap: 24px;
+    font-family: "tbc-font-bold";
+}
+
+.intro-section h3 {
+    font-size: 42px;
+    color: #fff;
+}
+
+.intro-section span {
+    font-size: 34px;
+    color: #fff;
+}
