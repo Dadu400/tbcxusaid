@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/intro.css" />
     <link rel="stylesheet" href="./css/info.css" />
-    <link rel="stylesheet" href="./css/courses.css">
+    <link rel="stylesheet" href="./css/courses.css" />
+    <link rel="stylesheet" href="./css/slideshow.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -77,7 +78,7 @@
                 <h5>iOS Development</h5>
                 <p>რეგისტრაცია დასრულებულია</p>
                 <div class="course-card-btn">
-                  <i class="fas fa-arrow-right"></i>                  
+                  <i class="fas fa-arrow-right"></i>
                   <a href="#">კურსის დეტალები</a>
                 </div>
               </div>
@@ -88,7 +89,7 @@
                 <h5>React</h5>
                 <p>რეგისტრაცია დასრულებულია</p>
                 <div class="course-card-btn">
-                  <i class="fas fa-arrow-right"></i>                  
+                  <i class="fas fa-arrow-right"></i>
                   <a href="#">კურსის დეტალები</a>
                 </div>
               </div>
@@ -99,7 +100,7 @@
                 <h5>Intro to Python</h5>
                 <p>რეგისტრაცია დასრულებულია</p>
                 <div class="course-card-btn">
-                  <i class="fas fa-arrow-right"></i>                  
+                  <i class="fas fa-arrow-right"></i>
                   <a href="#">კურსის დეტალები</a>
                 </div>
               </div>
@@ -110,7 +111,7 @@
                 <h5>Advanced Python</h5>
                 <p>რეგისტრაცია დასრულებულია</p>
                 <div class="course-card-btn">
-                  <i class="fas fa-arrow-right"></i>                  
+                  <i class="fas fa-arrow-right"></i>
                   <a href="#">კურსის დეტალები</a>
                 </div>
               </div>
@@ -121,7 +122,7 @@
                 <h5>Advanced Cybersecurity Course</h5>
                 <p>რეგისტრაცია დასრულებულია</p>
                 <div class="course-card-btn">
-                  <i class="fas fa-arrow-right"></i>                  
+                  <i class="fas fa-arrow-right"></i>
                   <a href="#">კურსის დეტალები</a>
                 </div>
               </div>
@@ -132,7 +133,7 @@
                 <h5>ToT - Training of Trainers</h5>
                 <p>რეგისტრაცია დასრულებულია</p>
                 <div class="course-card-btn">
-                  <i class="fas fa-arrow-right"></i>                  
+                  <i class="fas fa-arrow-right"></i>
                   <a href="#">კურსის დეტალები</a>
                 </div>
               </div>
@@ -143,7 +144,7 @@
                 <h5>Blockchain</h5>
                 <p>რეგისტრაცია დასრულებულია</p>
                 <div class="course-card-btn">
-                  <i class="fas fa-arrow-right"></i>                  
+                  <i class="fas fa-arrow-right"></i>
                   <a href="#">კურსის დეტალები</a>
                 </div>
               </div>
@@ -154,7 +155,7 @@
                 <h5>DevOps</h5>
                 <p>რეგისტრაცია დასრულებულია</p>
                 <div class="course-card-btn">
-                  <i class="fas fa-arrow-right"></i>                  
+                  <i class="fas fa-arrow-right"></i>
                   <a href="#">კურსის დეტალები</a>
                 </div>
               </div>
@@ -165,7 +166,7 @@
                 <h5>Information Security Governance</h5>
                 <p>რეგისტრაცია დასრულებულია</p>
                 <div class="course-card-btn">
-                  <i class="fas fa-arrow-right"></i>                  
+                  <i class="fas fa-arrow-right"></i>
                   <a href="#">კურსის დეტალები</a>
                 </div>
               </div>
@@ -173,7 +174,57 @@
           </div>
         </div>
       </section>
+      <section class="slideshow-section">
+        <div class="container slideshow-header">
+          <h4>პროექტის პარტნიორები</h4>
+        </div>
+        <div id="slider-container">
+          <div id="slider">
+            <div class="slide active">
+              <img src="./assets/usaid-logo.png" width="246px" height="74px" />
+              <img src="./assets/space-logo.png" width="241px" height="80px" />
+              <img src="./assets/tinet.webp" width="250px" height="45px" />
+            </div>
+            <div class="slide">
+              <img src="./assets/tegeta-logo.png" width="248px" height="71px" />
+              <img
+                src="./assets/spectre-logo.png"
+                width="187px"
+                height="64px"
+              />
+              <img
+                src="./assets/tbc-leasing-logo.png"
+                width="312px"
+                height="95px"
+              />
+            </div>
+            <div class="slide">
+              <img src="./assets/ufc-logo.png" width="227px" height="64px" />
+            </div>
+          </div>
+          <button id="prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="slider-arrow"
+              viewBox="0 0 21 41"
+            >
+              <path d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path>
+            </svg>
+          </button>
+          <button id="next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="slider-arrow"
+              viewBox="0 0 21 41"
+            >
+              <path d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path>
+            </svg>
+          </button>
+          <div id="dots-container"></div>
+        </div>
+      </section>
     </main>
     <script src="./javascript/navbar.js"></script>
+    <script src="./javascript/slider.js"></script>
   </body>
 </html>
