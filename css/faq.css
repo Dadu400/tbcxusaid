@@ -1,0 +1,82 @@
+.faq-section {
+  padding: 80px 0;
+  background-color: #161616;
+}
+
+.faq-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.faq-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.faq-card {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    border-bottom: 1px solid rgb(53, 49, 49);
+    padding-bottom: 32px;
+}
+
+.faq-section-content h2 {
+  color: rgb(244, 244, 244);
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.faq-card-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faq-card-header h5 {
+  font-size: 18px;
+  color: rgb(244, 244, 244);
+  font-weight: 400;
+}
+
+.faq-card-content .mrg-btm {
+  margin: 28px 0;
+}
+
+.faq-card-answers {
+ padding: 0 34px;
+}
+
+.faq-card-answers span {
+font-weight: 700;
+}
+
+.faq-card-content p {
+  font-size: 14px;
+  color: rgb(244, 244, 244);
+  font-weight: 400;
+  text-align: start;
+  line-height: 28px;
+}
+
+.faq-arrow-down {
+    fill: rgb(244, 244, 244);
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease; 
+}
+
+.faq-card-content {
+    display: none;
+}
+
+.faq-card.active .faq-card-content {
+    display: block;
+}
+
+.faq-card.active .faq-arrow-down {
+    transform: rotate(180deg); 
+}
+

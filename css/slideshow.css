@@ -3,8 +3,8 @@
     padding: 36px 0 56px 0;
 }
 
-.slideshow-header h4 {
-    color: #fff;
+.slideshow-header h2 {
+    color: rgb(244, 244, 244);
     font-size: 24px;
     font-weight: normal;
     margin-bottom: 100px;
