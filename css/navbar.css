@@ -1,5 +1,14 @@
 .navbar {
     background-color: #1A1E1F;
+    transition: all 0.4s ease 0s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-scrolled {
+    background-color: rgba(34, 34, 34, 0.95);
 }
 
 .navbar-content {

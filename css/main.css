@@ -28,6 +28,7 @@ body {
   background-color: #161616;
   color: white;
   font-family: "tbc-font";
+  transition: all 0.3s ease-in-out;
 }
 
 li {
