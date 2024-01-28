@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 100;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -47,6 +47,8 @@
 
 .hamburger {
   display: none;
+  z-index: 104 !important;
+  position: relative;
 }
 
 .bar {
@@ -91,6 +93,21 @@
   height: 3px;
 }
 
+#mobile-navbar-open-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(22, 22, 22, 0.62);
+  display: none;
+  z-index: 101;
+}
+
+#mobile-navbar-open-blur.active {
+  display: block;
+}
+
 @media (max-width: 1599px) {
   .navbar-content {
     width: 70vw;
@@ -130,6 +147,7 @@
     height: 100vh;
     padding: 88px 25px 0 0;
     right: -100%;
+    z-index: 102;
   }
 
   #navbar-menu.active {
