@@ -5,14 +5,18 @@
 
 .faq-section-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 50px;
 }
 
 .faq-cards {
   display: flex;
   flex-direction: column;
+  flex-basis: 100%;
   gap: 28px;
+  order: 3;
 }
 
 .faq-card {
@@ -27,6 +31,8 @@
   color: rgb(244, 244, 244);
   font-size: 24px;
   font-weight: normal;
+  flex: 1;
+  order: 1;
 }
 
 .faq-card-header {
@@ -78,4 +84,29 @@
 
 .faq-card.active .faq-arrow-down {
   transform: rotate(180deg);
+}
+
+.all-questions-btn {
+  font-family: "tbc-font";
+  font-weight: bold;
+  font-size: 20px;
+  color: #00aee7;
+  transition: all 0.5s ease;
+  order: 2;
+}
+
+.all-questions-btn:hover {
+  color: rgb(170, 170, 170);
+}
+
+@media (max-width: 792px) {
+
+  .faq-section-content h2 {
+    flex-basis: 100%;
+  }
+
+  .all-questions-btn {
+    order: 4;
+  }
+
 }
