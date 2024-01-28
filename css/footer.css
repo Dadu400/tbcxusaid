@@ -5,7 +5,7 @@
 
 .footer-section-wrapper {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   align-items: center;
   gap: 28px;
@@ -42,7 +42,7 @@
   text-decoration: none;
 }
 
-.button-div {
+.footer-contact {
   display: flex;
   align-self: flex-end;
 }
@@ -60,9 +60,32 @@
   color: rgb(244, 244, 244);
   font-family: "tbc-font";
   text-decoration: none;
+  margin-left: auto;
 }
 
 .contact-us-btn:hover {
   background-color: rgb(213, 213, 213);
   color: rgb(53, 49, 49);
+}
+
+@media (max-width: 575.98px) {
+  .footer-logo {
+    grid-column: 1 / -1;
+  }
+
+  .contact-us-btn {
+    margin: 0;
+    order: 2;
+  }
+
+  .footer-socials {
+    order: 3;
+    margin: auto;
+  }
+
+  .footer-content {
+    order: 4;
+    grid-column: 1 / -1;
+    flex-direction: column-reverse;
+  }
 }
