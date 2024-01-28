@@ -1,122 +1,151 @@
 .navbar {
-    background-color: #1A1E1F;
-    transition: all 0.4s ease 0s;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+  background-color: #1a1e1f;
+  transition: all 0.4s ease 0s;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar-scrolled {
-    background-color: rgba(34, 34, 34, 0.95);
+  background-color: rgba(34, 34, 34, 0.95);
 }
 
 .navbar-content {
-    width: 53vw;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 22px 0px;
+  width: 53vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0px;
 }
 
 .navbar-logo img {
-    width: 182px;
-    height: 36px;
+  width: 182px;
+  height: 36px;
 }
 
 #navbar-menu {
-    display: flex;
-    font-size: 14px;
-    gap: 40px;
+  display: flex;
+  font-size: 14px;
+  gap: 40px;
 }
 
 .navbar-link {
-    transition: color .4s ease 0s;
+  transition: color 0.4s ease 0s;
 }
 
 .navbar-link:hover {
-    color: rgb(0, 163, 224)
+  color: rgb(0, 163, 224);
 }
 
 .navbar .active {
-    color: rgb(0, 163, 224);
+  color: rgb(0, 163, 224);
 }
 
 .hamburger {
-    display: none;
+  display: none;
 }
 
 .bar {
-    display: flex;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: white;
-    border-radius: 8px;
+  display: flex;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  border-radius: 8px;
 }
 
 .bar:nth-of-type(1) {
-    width: 50%;
-    margin: 0 auto 0 0;
+  width: 50%;
+  margin: 0 auto 0 0;
 }
 
 .bar:nth-of-type(3) {
-    width: 50%;
-    margin: 0 0 0 auto;
-    height: 2px;
+  width: 50%;
+  margin: 0 0 0 auto;
+  height: 2px;
 }
 
 .hamburger-active .bar {
-    background-color: rgb(118, 118, 118);
+  background-color: rgb(118, 118, 118);
 }
 
 .hamburger-active .bar:nth-of-type(1) {
-    width: 100%;
-    height: 3px;
-    transform: translate(0, 8px) rotate(-45deg);
+  width: 100%;
+  height: 3px;
+  transform: translate(0, 8px) rotate(-45deg);
 }
 
 .hamburger-active .bar:nth-of-type(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .hamburger-active .bar:nth-of-type(3) {
-    width: 100%;
-    transform: translate(0, -8px) rotate(45deg);
-    height: 3px;
+  width: 100%;
+  transform: translate(0, -8px) rotate(45deg);
+  height: 3px;
 }
 
-@media only screen and (max-width: 768px) {
-    #navbar-menu {
-        visibility: hidden;
-        opacity: 0;
-        position: fixed;
-        top: 0;
-        width: 50%;
-        right: 0;
-        flex-direction: column;
-        background-color: #222222;
-        border-radius: 10px;
-        text-align: right;
-        transition: all 0.5s ease-in-out;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        height: 100vh;
-        padding: 88px 25px 0 0;
-        right: -100%;
-    }
+@media (max-width: 1599px) {
+  .navbar-content {
+    width: 70vw;
+  }
+}
 
-    #navbar-menu.active {
-        opacity: 1;
-        visibility: visible;
-        right: 0;
-    }
+@media (max-width: 1124px) {
+  .navbar-content {
+    width: 75vw;
+  }
+}
 
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
+@media (max-width: 1023px) {
+  .navbar-content {
+    width: 80vw;
+  }
+}
 
+@media (max-width: 792px) {
+  .navbar-content {
+    width: 90vw;
+  }
+
+  #navbar-menu {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 50%;
+    right: 0;
+    flex-direction: column;
+    background-color: #222222;
+    border-radius: 10px;
+    text-align: right;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    height: 100vh;
+    padding: 88px 25px 0 0;
+    right: -100%;
+  }
+
+  #navbar-menu.active {
+    opacity: 1;
+    visibility: visible;
+    right: 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar-content {
+    width: 90vw;
+  }
 }

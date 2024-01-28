@@ -1,16 +1,16 @@
 @font-face {
   font-family: "tbc-font";
-  src: url("./fonts/tbc-font.woff2") format('woff');
+  src: url("./fonts/tbc-font.woff2") format("woff");
 }
 
 @font-face {
   font-family: "tbc-font-bold";
-  src: url("./fonts/tbc-font-bold.woff2") format('woff');
+  src: url("./fonts/tbc-font-bold.woff2") format("woff");
 }
 
 @font-face {
   font-family: "tbc-font-semi-bold";
-  src: url("./fonts/tbc-font-semi-bold.woff2") format('woff');
+  src: url("./fonts/tbc-font-semi-bold.woff2") format("woff");
 }
 
 .container {
@@ -38,4 +38,32 @@ li {
 a {
   color: white;
   text-decoration: none;
+}
+
+section {
+  overflow: hidden;
+}
+
+@media (max-width: 1599px) {
+  .container {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 1124px) {
+  .container {
+    width: 75vw;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 792px) {
+  .container {
+    width: 90vw;
+  }
 }

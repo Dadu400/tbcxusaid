@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 28px;
- }
+}
 
 .footer-socials {
   display: flex;
@@ -49,7 +49,7 @@
 
 .contact-us-btn {
   width: 160px;
-  background-color: #00AEF3;
+  background-color: #00aef3;
   border-radius: 5px;
   padding: 10px 20px;
   transition: all 0.3s ease-in-out;
@@ -66,7 +66,3 @@
   background-color: rgb(213, 213, 213);
   color: rgb(53, 49, 49);
 }
-
-
-
-

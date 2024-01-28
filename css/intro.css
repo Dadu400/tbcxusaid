@@ -1,22 +1,25 @@
 .intro-section {
-    background-image:url(../assets/people_meeting_background.jpg);
+  background-image: url(../assets/people_meeting_background.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .intro-section-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 352px;
-    gap: 24px;
-    font-family: "tbc-font-bold";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 352px;
+  gap: 24px;
+  font-family: "tbc-font-bold";
 }
 
 .intro-section h3 {
-    font-size: 42px;
-    color: #fff;
+  font-size: 42px;
+  color: #fff;
 }
 
 .intro-section span {
-    font-size: 34px;
-    color: #fff;
+  font-size: 34px;
+  color: #fff;
 }

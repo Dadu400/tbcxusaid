@@ -16,11 +16,11 @@
 }
 
 .faq-card {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-    border-bottom: 1px solid rgb(53, 49, 49);
-    padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  border-bottom: 1px solid rgb(53, 49, 49);
+  padding-bottom: 32px;
 }
 
 .faq-section-content h2 {
@@ -46,11 +46,11 @@
 }
 
 .faq-card-answers {
- padding: 0 34px;
+  padding: 0 34px;
 }
 
 .faq-card-answers span {
-font-weight: 700;
+  font-weight: 700;
 }
 
 .faq-card-content p {
@@ -62,21 +62,20 @@ font-weight: 700;
 }
 
 .faq-arrow-down {
-    fill: rgb(244, 244, 244);
-    width: 24px;
-    height: 24px;
-    transition: all 0.3s ease; 
+  fill: rgb(244, 244, 244);
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
 }
 
 .faq-card-content {
-    display: none;
+  display: none;
 }
 
 .faq-card.active .faq-card-content {
-    display: block;
+  display: block;
 }
 
 .faq-card.active .faq-arrow-down {
-    transform: rotate(180deg); 
+  transform: rotate(180deg);
 }
-

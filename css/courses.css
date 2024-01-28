@@ -26,7 +26,6 @@
 
 .courses-card {
   border-radius: 6px;
-  align-items: right;
   gap: 40px;
   border: 1px solid rgb(85, 85, 85);
 }
@@ -80,4 +79,23 @@
 .course-card-btn a:hover {
   color: rgb(0, 128, 176);
   transition-duration: 0.4s;
+}
+
+@media (max-width: 1315px) {
+  .courses-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .courses-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+
+  .course-card-content {
+    height: 180px;
+  }
 }

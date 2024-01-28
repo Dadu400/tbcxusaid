@@ -1,25 +1,25 @@
 .info-section {
-    background-color: #2B2B2B;
-    padding: 50px 0
+  background-color: #2b2b2b;
+  padding: 50px 0;
 }
 
 .info-section-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
 }
 
 .info-section-content p {
-    font-size: 28px;
-    color: rgb(244, 244, 244);
-    font-family: "tbc-font";
+  font-size: 28px;
+  color: rgb(244, 244, 244);
+  font-family: "tbc-font";
 }
 
 .info-section-content a {
-    font-size: 20px;
-    color: #00AEE7;
-    font-family: "tbc-font";
-    font-weight: 600;
-    cursor: pointer;
+  font-size: 20px;
+  color: #00aee7;
+  font-family: "tbc-font";
+  font-weight: 600;
+  cursor: pointer;
 }
