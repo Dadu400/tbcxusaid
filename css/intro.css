@@ -9,17 +9,31 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 352px;
+  height: 282px;
   gap: 24px;
   font-family: "tbc-font-bold";
 }
 
 .intro-section h3 {
   font-size: 42px;
-  color: #fff;
+  color: rgb(244, 244, 244);
 }
 
 .intro-section span {
   font-size: 34px;
   color: #fff;
+}
+
+@media (max-width: 792px) {
+  .intro-section {
+    background-image: url(../assets/ppl-meeting-background-2.jpg);
+  }
+
+  .intro-section h3 {
+    font-size: 26px;
+  }
+
+  .intro-section span {
+    font-size: 24px;
+  }
 }

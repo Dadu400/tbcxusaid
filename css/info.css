@@ -23,3 +23,13 @@
   font-weight: 600;
   cursor: pointer;
 }
+
+@media (max-width: 792px) {
+  .info-section-content p {
+    font-size: 20px;
+  }
+
+  .info-section-content a {
+    font-size: 20px;
+  }
+}
